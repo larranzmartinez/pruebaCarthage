@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B70C4A8B22DDC86600EA0D7A /* MapFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B70C4A8922DDC86600EA0D7A /* MapFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B775A53822DDD0F000C89BF1 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = B775A53722DDD0F000C89BF1 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B70C4A8622DDC86600EA0D7A /* MapFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70C4A8922DDC86600EA0D7A /* MapFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapFramework.h; sourceTree = "<group>"; };
 		B70C4A8A22DDC86600EA0D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B775A53722DDD0F000C89BF1 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				B70C4A8922DDC86600EA0D7A /* MapFramework.h */,
 				B70C4A8A22DDC86600EA0D7A /* Info.plist */,
+				B775A53722DDD0F000C89BF1 /* Example.swift */,
 			);
 			path = MapFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					B70C4A8522DDC86600EA0D7A = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B775A53822DDD0F000C89BF1 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		B70C4A8F22DDC86600EA0D7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.laura.accenture.MapFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		B70C4A9022DDC86600EA0D7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
